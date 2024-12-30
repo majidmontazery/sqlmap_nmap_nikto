@@ -1,0 +1,97 @@
+Nmap 
+
+#nmap -F ipaddress
+#nmap -p ipaddress
+#nmap -p 22-53 10.0.0.0/24
+#nmap -p- 10.0.0.38
+#nmap -T5 10.0.0.138
+#nmap -T4 10.0.0.38
+#nmap --max-rtt-timeout 250ms --initial-rtt-timeout 150ms exampl.com
+#nmap -sP 10.0.0.0/24
+#nmap -sP -PP 10.0.0.0/24
+#nmap -sP -Ps 10.0.0.0/24 -g22
+#nmap -PA example.com
+#nmap -PR 10.0.0.0/24
+#nmap -il list.txt
+#nmap -oN hosts.txt 10.0.0.0/24
+#nmap -oG live.txt 10.0.0.0/24
+#nmap -oX scanme.xnl 10.0.0.0/24
+#nmap ip -v
+#nmap -sS ip 
+#nmap -sA ip
+#nmap -sF ip
+#nmap -sN ip
+#nmap -sX ip
+#nmap --scanflags SYNURG example.com
+#nmap -sU ip --max-retries 1
+#nmap -sV example.com
+#nmao -sV --version-intensify 2 example.com
+#nmap -sP ip
+#nmap -D ip
+#nmap -D RND:5 ip
+#nmap -g 53 ip
+#nmap -f ip
+#nmap --mtu 16 ip
+#nmap --data-length ip
+#nmap --spoof-mac 0 ip
+#nmap -v ip
+#nmap ip -v
+#nmap --reason example.com
+#nmap -d ip
+#nmap -script default ip
+#nmap -sU -p161 ip -sV
+#nmap -sU -P 161 --script-snmp-win32-users ip
+#nmap -sU -p --script snmp-sysdescr ip
+#nmap -sU -p161 --script snmp-interfaces ip
+#nmap -sU -p161 --script=snmp-win32-software ip
+#nmap -sU --script nbstat.nse -p137 ip
+#nmap -sV -p 445 ip
+#nmap --script 'smb-os-discovery.nse' ip
+#nmap ip -Pn 
+#nmap --script 'smb-shares-enum.nse' ip -Pn
+#nmap --script=http-enum ip -sV 
+#nmap -sU -p53 --script dns-cache-snoop.nse ip
+#nmap -sU -p67 --script=dhcp-discover ip
+#nmap -sU -p 1900 --script=upnp-info ip
+#nmap -sn -PS ip
+#nmap -sn -PU ip
+#nmap -O -v ip
+#nmap -sn -PE ip
+#nmap -sn -PO ip
+#nmap -sn -PR ip
+#nmap -A ip
+#nmap -O --osscan-guess ip
+#nmap -T4 -A -V ip
+#nmap -sn --script dns-brute example.com
+#nmap -sn --script whois-* example.com
+#nmap -sn-il/home/kali/Desktop/test.txt
+#nmap --script http-enum ip
+#nmap --script http-methods ip
+#nmap --script ftp-syst ip --script ftp-anon
+#nmap --script ftp-vsftpd-backdoor ip
+#nmap -p 53 -A -v ip
+#nmap --script ssh2-enum-algos ip
+#nmap --script ssh-auth-methods ip
+#nmap --script ssh-run ip
+#nmap --script ssh-hostkey ip
+#nmap -p 445 --script smb-os-discovery ip
+#nmap --script smb-enum-shares ip
+#nmap --script smtp-commands ip
+#nmap --script smtp-open-relay ip
+#nmap --script smtp-enum-users ip
+#nmap --script mysql-info ip
+#nmap --script mysql-enum ip
+#nmap --script mysql-query ip
+#nmap --script mysql-users ip
+#nmap --script ip-geolocation-* example.com
+#nmap --traceroute --script traceroute-geolocation ip
+=======================================================
+#sqlmap -u "example.com" --dbs
+#sqlmap -u "exampl.com" -D databasename --tables
+#sqlmap -u "example.com" -D databasename -T users --clumns
+#sqlmap -u "example.com" -D databasename -T users -C email --dump all
+#sqlmap -u "example.com" -D databasename --passwords
+#sqlmap -u "exmple.com" --schema
+=====================================================
+#Nikto -h ip -p 80
+#Nikto -h ip -ssl
